@@ -24,7 +24,7 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/privacy" element={<Privacy />} />
 
-        <Route path="Forum" element={<Forum />} />
+        <Route path="/forum" element={<Forum />} />
       </Routes>
     </BrowserRouter>
   );

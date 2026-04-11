@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ItemHeader from "./headers/ItemHeader.jsx";
+import ItemHeader from "./headers/MainHeader.jsx";
 import Footer from "./footers/Footer.jsx";
 import * as imgAssets from "./imgs/imgController.js";
 import { getProductList } from "./api/ProductService.js";

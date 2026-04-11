@@ -17,13 +17,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 100%;
   max-width: 1920px;
   height: 4.375rem;
   margin: 0 auto;
   padding: 0 12.5rem;
   box-sizing: border-box;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 3.75rem;
 }
 
 .header__logo {
@@ -40,24 +45,40 @@
 }
 
 .logo__title {
-  color: var(--Primary-100);
+  color: #3692ff;
   font-family: "ROKAF Sans", sans-serif;
   font-size: 1.625rem;
   font-weight: 700;
   line-height: 1;
 }
 
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header__menu-link {
+  color: #4b5563;
+  font-family: Pretendard, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header__menu-link.active,
+.header__menu-link:hover {
+  color: #111827;
+}
+
 .header__login {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   width: 8rem;
   height: 3rem;
-
   border-radius: 0.5rem;
-  background: var(--Primary-100);
-
+  background: #3692ff;
   color: #fff;
   text-decoration: none;
   font-family: Pretendard, sans-serif;
@@ -69,6 +90,18 @@
 @media (max-width: 743px) {
   .header__container {
     padding: 0 1rem;
+  }
+
+  .header__left {
+    gap: 1.5rem;
+  }
+
+  .header__menu {
+    gap: 1rem;
+  }
+
+  .header__menu-link {
+    font-size: 0.875rem;
   }
 
   .logo__title {
